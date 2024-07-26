@@ -21,12 +21,11 @@ function h($data=0){
 	$h[] = "Cookie: ".Simpan("Cookie");
 	return $h;
 }
-
-cookie:
 logo();
 $n = "\n";$d = "\033[0m";$hp = "\033[101m\033[1;32m";
 print "\t".$hp.str_pad(strtoupper(nama_file), 44, " ", STR_PAD_BOTH).$d.$n.$n;
 
+cookie:
 Cetak("Register",register_link);
 print line();
 echo "Lưu Ý: Chỉ Lấy Cookie Bằng App HttpCanary\n Và phải lấy ở https://ourinfo.top/faucet/currency/doge\n";
