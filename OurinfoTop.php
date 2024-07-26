@@ -60,12 +60,7 @@ while(true){
 		$coin = explode('"',$coins)[0];
 		$r = curl(host."faucet/currency/".$coin,h())[1];
 		$cek = GlobalCheck($r);
-		if($cek['cf']){
-			print Error("Cloudflare Detect\n");
-			hapus("cookie.txt");
-			hapus("Cookie");
-			goto cookie;
-		}
+
 		if(preg_match('/Daily claim limit/',$r)){
 			exit(Error("Daily claim limit for this coin reached\n"));
 		}
